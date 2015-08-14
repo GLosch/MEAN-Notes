@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MEAN Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.8/semantic.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.8/semantic.min.js"></script>
+    <script src="../js/controllers/cardController.js"></script>
+    <script src="../js/client.js"></script>
+  </head>
+
+  <body ng-app="noteTakr">
+    <div id="container">
+    
+    <!-- Nav Menu placeholder -->
+   <!--  <div class="ui menu">
+      <a class="item">Browse</a>
+      <a class="item">Submit</a>
+      <div class="right menu">
+        <a class="item">Sign Up</a>
+        <a class="item">Help</a>
+      </div>
+    </div> -->
+
+    <div ng-controller="mycontroller">
+      <h1>{{var1}}</h1>
+    </div>
+
+    <div ng-controller="cardController" class="ui centered card">
+      <div class="content">
+        <div class="header">MEAN Meetup</div>
+      </div>
+      <div class="content">
+        <div class="ui sub header">Date <input class="plain" placeholder='Type here!' value='{{date}}'>
+        </div>
+        <div class="ui small feed">
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Description: <input class="plain" placeholder='Type here!' value='{{description}}'>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                People: <input class="plain" placeholder='Type here!' value='{{people}}'>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Links/Resources: <input class="plain" placeholder='Type here!' value='{{links}}'>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Follow Up: <input class="plain" placeholder='Type here!' value='{{followup}}'>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="content">
+              <div class="summary">
+                Other Notes: <input class="plain" placeholder='Type here!' value='{{other}}'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="extra content">
+        <button class="ui button">Unnecessary Button?</button>
+      </div>
+    </div> <!--end card block -->
+
+  </div> <!--end container -->
+
+
+  </body>
+</html>

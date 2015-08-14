@@ -1,0 +1,11 @@
+body {
+  background-color: #16a085
+}
+
+#container {
+  width: 75%;
+  margin: 0 auto;
+}
+.plain {
+  text-decoration: none;
+}
